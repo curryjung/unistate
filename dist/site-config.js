@@ -9,7 +9,7 @@ window.UNISTATE = {
     { name: "Youngsik Yun", affiliation: "1", url: "http://bbangsik13.github.io/" },
     { name: "Youngjung Uh", affiliation: "1", url: "https://vilab.yonsei.ac.kr/members/professor" }
   ],
-  affiliations: "¹ Department of Artificial Intelligence, Yonsei University    ² Familiar",
+  affiliations: "¹ Yonsei University    ² Familiar",
   affiliationLinks: { "Familiar": "https://www.thefamiliarlab.com/" },
   bibtex: ""
 };

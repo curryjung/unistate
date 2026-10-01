@@ -67,3 +67,7 @@
 @media(max-width:760px){.hero-demo-intro{font-size:16px}}
 
 .rollout-phases [data-rollout-phase]{padding:3px 7px;border-radius:5px;color:#667286}.rollout-phases [aria-current="step"]{background:#e1e9ff;color:#2550df}
+
+/* Keep navigation labels intact and anchor headings clear of the mobile header. */
+nav div a{white-space:nowrap}
+@media(max-width:760px){html{scroll-padding-top:140px}nav div{column-gap:18px;row-gap:6px}}

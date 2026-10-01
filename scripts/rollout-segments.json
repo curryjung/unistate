@@ -1,18 +1,32 @@
 [
   {
     "name": "state-persistence",
+    "file": "state-persistence-cropped.mp4",
+    "crop": {
+      "x": 100,
+      "y": 80,
+      "width": 760,
+      "height": 436
+    },
     "start_frame": 0,
     "end_frame_exclusive": 285,
     "frames": 285,
     "seconds": 9.5,
-    "bytes": 2144913
+    "bytes": 2626475
   },
   {
     "name": "independent-control",
+    "file": "independent-control-cropped.mp4",
+    "crop": {
+      "x": 0,
+      "y": 110,
+      "width": 960,
+      "height": 406
+    },
     "start_frame": 304,
     "end_frame_exclusive": 739,
     "frames": 435,
     "seconds": 14.5,
-    "bytes": 1809468
+    "bytes": 1983202
   }
 ]

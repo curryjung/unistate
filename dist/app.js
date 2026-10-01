@@ -229,3 +229,15 @@ function showScene(index) {
 sceneButtons.forEach((button, i) => button.addEventListener("click", () => showScene(i)));
 document.getElementById("scene-prev").addEventListener("click", () => showScene(sceneIndex - 1));
 document.getElementById("scene-next").addEventListener("click", () => showScene(sceneIndex + 1));
+
+// Match the original clip's phase labels after cropping its white title band.
+const rolloutVideo = document.querySelector("#continued-control video");
+const rolloutPhases = [...document.querySelectorAll("[data-rollout-phase]")];
+function updateRolloutPhase() {
+ const phase = rolloutVideo.currentTime >= 9.6 ? 2 : rolloutVideo.currentTime >= 130 / 30 ? 1 : 0;
+ rolloutPhases.forEach((label, index) => {
+  if (index === phase) label.setAttribute("aria-current", "step");
+  else label.removeAttribute("aria-current");
+ });
+}
+["loadedmetadata", "timeupdate", "seeked"].forEach(event => rolloutVideo.addEventListener(event, updateRolloutPhase));

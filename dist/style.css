@@ -62,3 +62,6 @@
 
 .core-method{margin-top:26px;padding:18px}.core-method figcaption{padding-bottom:0}
 @media(max-width:760px){.core-method{padding:10px}}
+
+.hero-demo-intro{max-width:900px;margin:0 auto 24px;color:#526078;font-size:17px;line-height:1.65}
+@media(max-width:760px){.hero-demo-intro{font-size:16px}}

@@ -1,0 +1,42 @@
+[
+  {
+    "sequence": 1,
+    "original_bytes": 8934192,
+    "composite_bytes": 2191234,
+    "size": [
+      1584,
+      688
+    ],
+    "fps": 16
+  },
+  {
+    "sequence": 2,
+    "original_bytes": 6403661,
+    "composite_bytes": 1547184,
+    "size": [
+      1584,
+      688
+    ],
+    "fps": 16
+  },
+  {
+    "sequence": 3,
+    "original_bytes": 5746692,
+    "composite_bytes": 1142765,
+    "size": [
+      1584,
+      688
+    ],
+    "fps": 16
+  },
+  {
+    "sequence": 4,
+    "original_bytes": 13977385,
+    "composite_bytes": 3234003,
+    "size": [
+      1584,
+      688
+    ],
+    "fps": 16
+  }
+]

@@ -59,3 +59,6 @@
  .scene-stage .comparison-arrow{width:26px;height:48px;font-size:30px}
 }
 @media(prefers-reduced-motion:reduce){.comparison-slide,#scene-videos{will-change:auto}}
+
+.core-method{margin-top:26px;padding:18px}.core-method figcaption{padding-bottom:0}
+@media(max-width:760px){.core-method{padding:10px}}

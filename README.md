@@ -66,10 +66,12 @@ Local gallery revision: replaced the collapsed extra-scenes list with an always-
 Latest deployment: https://curryjung.github.io/unistate/ — commit `528bd6ac5cb208d7030bf01469dc61f135a9ac04`; GitHub Actions run 36824048286 succeeded. Includes centered intervention examples and qualitative comparisons above the quantitative table.
 
 
-## Results-focused revision — local only, not deployed
+## Results-focused revision — deployed 2026-10-01
 
 The original 24.63-second output is now presented as two independent clips: state persistence (9.5 seconds) and continued object/camera control (14.5 seconds). The slide transition is omitted; the original is preserved. Regenerate with `python3 scripts/split_rollouts.py --ffmpeg /path/to/ffmpeg`; segment metadata is in `scripts/rollout-segments.json`.
 
-Representative captions describe specified controls and generated responses. Method exposition is reduced to a short overview and a paper reference. Comparisons include a short instruction and viewing guide for each example; the quantitative table is unchanged. The additional scene gallery follows state persistence and comparison results. Author and Familiar links and the gallery's lateral navigation are included in these unpublished local changes. The upload ZIP does not include this revision.
+Representative captions describe specified controls and generated responses. Method exposition is reduced to a short overview and a paper reference. Comparisons include a short instruction and viewing guide for each example; the quantitative table is unchanged. The additional scene gallery follows state persistence and comparison results. Author and Familiar links and the gallery's lateral navigation are included in this revision. The upload ZIP does not include this revision.
 
-Local carousel refinement: removed the scene-count eyebrow, reduced scene selectors, widened the gallery video area, and added directional fade/slide transitions to both carousels. Poster decoding precedes source replacement; rapid selections resolve to the latest requested scene, and reduced-motion preferences skip animation. Not deployed.
+Local carousel refinement: removed the scene-count eyebrow, reduced scene selectors, widened the gallery video area, and added directional fade/slide transitions to both carousels. Poster decoding precedes source replacement; rapid selections resolve to the latest requested scene, and reduced-motion preferences skip animation. Deployed on 2026-10-01.
+
+Latest verified deployment (2026-10-01): `5a793242a7d1306f2ee6f9c3b89ea7386903de59`, GitHub Actions run [36827051712](https://github.com/curryjung/unistate/actions/runs/36827051712), success. Includes all results and carousel changes plus the cat/balloon swap. Public HTML, JS, CSS and configuration match the local files; both split videos return HTTP 200.

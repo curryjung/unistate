@@ -1,0 +1,18 @@
+[
+  {
+    "name": "state-persistence",
+    "start_frame": 0,
+    "end_frame_exclusive": 285,
+    "frames": 285,
+    "seconds": 9.5,
+    "bytes": 2144913
+  },
+  {
+    "name": "independent-control",
+    "start_frame": 304,
+    "end_frame_exclusive": 739,
+    "frames": 435,
+    "seconds": 14.5,
+    "bytes": 1809468
+  }
+]

@@ -14,17 +14,48 @@
 @media(max-width:760px){.comparison-stage{grid-template-columns:30px minmax(0,1fr) 30px;gap:6px}.comparison-arrow{width:30px;height:52px;font-size:34px}.comparison-caption{font-size:14px}.comparison-caption>span:last-child{color:#667286}.comparison-slide video{border-radius:4px}}
 
 .scene-gallery{margin-top:54px;padding:32px;border:1px solid #dbe3f4;border-radius:14px;background:#f6f8fe;scroll-margin-top:100px}
-.scene-gallery h3{font-size:28px;letter-spacing:-.6px;margin:0 0 14px}.scene-gallery .eyebrow{margin-bottom:12px}
+.scene-gallery #scenes-title{font-size:28px;letter-spacing:-.6px;margin:0 0 14px}.scene-gallery .eyebrow{margin-bottom:12px}
 .scene-choices{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 28px}
 .scene-choices button{padding:8px 14px;min-height:44px;color:#42516b;border:1px solid #cdd7ec;background:white;font-weight:500;cursor:pointer}
 .scene-choices button[aria-pressed="true"]{background:#2550df;border-color:#2550df;color:white}.scene-choices button:hover{border-color:#2550df}
 .scene-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid #dbe3f4;padding-top:22px}
-.scene-toolbar h4{margin:0;font-size:21px}.scene-toolbar p{margin:2px 0 0;font-size:14px;color:#667286}
-.scene-arrows{display:flex;gap:10px}.scene-arrows .comparison-arrow{height:44px;width:44px;font-size:32px}
-#scene-videos{margin-top:18px}#scene-videos video{aspect-ratio:26/15}
-@media(max-width:760px){.scene-gallery{padding:20px 14px;margin-top:36px}.scene-choices{gap:7px}.scene-choices button{padding:7px 10px;font-size:14px}.scene-gallery h3{font-size:25px}}
+.scene-toolbar #scene-name{margin:0;font-size:21px}.scene-toolbar p{margin:2px 0 0;font-size:14px;color:#667286}
+.scene-stage{margin-top:18px}
+#scene-videos{margin-top:0;min-width:0}#scene-videos video{aspect-ratio:26/15}
+@media(max-width:760px){.scene-gallery{padding:20px 14px;margin-top:36px}.scene-choices{gap:7px}.scene-choices button{padding:7px 10px;font-size:14px}.scene-gallery #scenes-title{font-size:25px}}
 
 /* Center incomplete rows in the intervention examples. */
 .intervention-grid{display:flex;flex-wrap:wrap;justify-content:center}
 .intervention-grid>figure{flex:0 0 calc((100% - 40px)/3)}
 @media(max-width:760px){.intervention-grid>figure{flex-basis:100%}}
+
+.author-block{display:inline-block;white-space:nowrap}.author-block sup{font-size:.7em;margin-left:2px}.author-block a{text-underline-offset:3px}
+
+/* Keep the page focused on observed results and concise control descriptions. */
+.compact-idea{padding:42px 0}.compact-idea h2{font-size:30px;margin-bottom:16px}.compact-idea .intro{margin-bottom:10px}
+.result-caption{line-height:1.55}.result-caption span{display:block}.result-caption span+span{margin-top:6px}.result-caption strong{color:#142139;font-weight:650}
+.rollout-example+ .rollout-example{border-top:1px solid #dce2ec;margin-top:64px;padding-top:56px}
+.memory .rollout-example video{width:100%;max-width:960px;max-height:none;margin:28px auto 0;aspect-ratio:16/9}
+.rollout-phases{display:flex;align-items:center;flex-wrap:wrap;gap:12px;color:#2550df;font-weight:650;font-size:15px}
+.comparison-description{color:#42516b;font-size:16px;max-width:880px;margin:22px 0 0;min-height:3.3em}
+.gallery-section{padding-bottom:75px}.gallery-section .scene-gallery{margin-top:0}
+@media(max-width:760px){.compact-idea{padding:36px 0}.rollout-example+ .rollout-example{margin-top:42px;padding-top:36px}.gallery-section{padding-bottom:48px}.rollout-phases{gap:8px;font-size:14px}}
+
+/* Give the scene videos more space, with compact scene selectors. */
+.gallery-section{width:min(1440px,calc(100% - 32px))}
+.scene-gallery{padding:26px 18px}
+.scene-choices{gap:6px;margin:18px 0}
+.scene-choices button{min-height:30px;padding:4px 10px;font-size:12px;line-height:1.5;border-radius:5px}
+.scene-toolbar{padding-top:16px}.scene-toolbar #scene-name{font-size:19px}
+.scene-stage{grid-template-columns:36px minmax(0,1fr) 36px;gap:8px}
+.scene-stage .comparison-arrow{width:36px;height:56px;font-size:36px}
+#scene-videos{gap:14px}
+#scene-videos figcaption{font-size:12px}
+.comparison-slide,#scene-videos{will-change:opacity,transform}
+@media(max-width:760px){
+ .gallery-section{width:calc(100% - 20px)}.scene-gallery{padding:22px 10px}
+ .scene-choices{gap:6px}.scene-choices button{min-height:32px;padding:5px 8px;font-size:12px}
+ .scene-stage{grid-template-columns:26px minmax(0,1fr) 26px;gap:5px}
+ .scene-stage .comparison-arrow{width:26px;height:48px;font-size:30px}
+}
+@media(prefers-reduced-motion:reduce){.comparison-slide,#scene-videos{will-change:auto}}

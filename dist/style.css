@@ -71,3 +71,9 @@
 /* Keep navigation labels intact and anchor headings clear of the mobile header. */
 nav div a{white-space:nowrap}
 @media(max-width:760px){html{scroll-padding-top:140px}nav div{column-gap:18px;row-gap:6px}}
+
+.overview-feature{max-width:960px;margin:0 auto}.overview-feature video{height:auto;aspect-ratio:26/15}.overview-feature figcaption{text-align:center;padding-bottom:0}
+
+.hero-examples{margin-top:56px}.hero-examples .hero-demo-intro{margin-bottom:24px}@media(max-width:760px){.hero-examples{margin-top:40px}}
+
+.hero-examples.hero-examples-first{margin-top:0}.overview-film{padding-bottom:75px}@media(max-width:760px){.overview-film{padding-bottom:48px}}

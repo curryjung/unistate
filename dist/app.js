@@ -120,6 +120,7 @@ const comparisonDescriptions = [
  "Move the ball up and down and rotate it while tilting the camera upward. Compare the ball’s changing orientation and vertical motion.",
  "Move the tractor behind the hay and partly back while moving the camera forward. Compare the return motion and whether the hay remains in place."
 ];
+const comparisonOrder = [2, 3, 4, 1];
 let comparisonIndex = 0;
 function showComparison(index) {
  const next = (index + comparisonButtons.length) % comparisonButtons.length;
@@ -127,10 +128,11 @@ function showComparison(index) {
  const resume = !comparisonVideo.paused;
  const direction = index > comparisonIndex ? 1 : -1;
  comparisonIndex = next;
- transitionMedia(comparisonSlide, direction, [`assets/videos/comparisons/sequence-${next + 1}.jpg`], () => {
- document.getElementById("comparison-description").textContent = comparisonDescriptions[next];
+ const sequence = comparisonOrder[next];
+ transitionMedia(comparisonSlide, direction, [`assets/videos/comparisons/sequence-${sequence}.jpg`], () => {
+ document.getElementById("comparison-description").textContent = comparisonDescriptions[sequence - 1];
  const number = next + 1;
- const base = `assets/videos/comparisons/sequence-${number}`;
+ const base = `assets/videos/comparisons/sequence-${sequence}`;
  comparisonVideo.pause();
  comparisonVideo.poster = `${base}.jpg`;
  comparisonVideo.querySelector("source").src = `${base}.mp4`;
